@@ -146,7 +146,7 @@ is.numeric(all_trips$ride_length)
 ```
 # We will create a new version of the dataframe (v2) since data is being removed
 ```{r}
-all_trips_v2 <- subset(all_trips_v2, !(start_station_name == "HQ QR" | ride_length < 0))
+all_trips_v2 <- subset(all_trips, !(start_station_name == "HQ QR" | ride_length < 0))
 ```
 #Conductive Analysis
 #straight average (total ride length / rides)
